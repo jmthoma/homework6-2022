@@ -43,3 +43,16 @@ document.querySelector("#skip").addEventListener("click", function(){
 		console.log("new time " + video.currentTime);
 	}
 })
+
+document.querySelector("#mute").addEventListener("click", function() {
+	console.log("Mute");
+	video.muted ^= 1;
+})
+
+document.querySelector("#vintage").addEventListener("click", function() {
+	video.classList.add('oldSchool');
+})
+
+document.querySelector("#orig").addEventListener("click", function() {
+	video.classList.remove('oldSchool');
+})
