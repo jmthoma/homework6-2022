@@ -49,6 +49,11 @@ document.querySelector("#mute").addEventListener("click", function() {
 	video.muted ^= 1;
 })
 
+document.querySelector("#mute").addEventListener("click", function() {
+	console.log("Unmute");
+	video.unmuted ^= 1;
+})
+
 document.querySelector("#vintage").addEventListener("click", function() {
 	video.classList.add('oldSchool');
 })
@@ -56,3 +61,4 @@ document.querySelector("#vintage").addEventListener("click", function() {
 document.querySelector("#orig").addEventListener("click", function() {
 	video.classList.remove('oldSchool');
 })
+
